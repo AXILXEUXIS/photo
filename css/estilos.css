@@ -71,16 +71,35 @@ header ul li{
     font-size:15px;
 }
 
-
 .menuderecha {
 	text-decoration: none;
 }
 
+/* Mobiles Header */
 
+@media screen and (max-width: 600px) {
 
+    header h1{
+        font-size: 1.1em;
+        width: 100%
+    }
+    header nav{
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    header ul{
+        flex-flow: row wrap;
+    }
 
-
-
+    li a{
+        font-size: 14px;
+        margin-right: 22%;
+    }
+    header{
+        display: block;
+        order:0;
+    }
 
 
 
