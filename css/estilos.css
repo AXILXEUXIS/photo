@@ -3,13 +3,14 @@
 .flex-container{
     width:100%;
     max-width:1366px;
-    min-width:200px;
+    min-width:220px;
     margin:0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center ;
     align-items: center ;
     align-content: stretch;
+    margin: 0 auto;
 }
 
 header{
@@ -35,6 +36,7 @@ header ul{
 }
 
 header h1{
+	color: white;
     font-family: 'Roboto';
     text-transform: uppercase;
     text-shadow: 2px 0px 0px #02010a;
@@ -44,7 +46,6 @@ header h1{
     float:left;
     width:50%;
     padding-left:30px;
-    color: white;
     box-sizing:border-box;
 
 }
@@ -75,8 +76,36 @@ header ul li{
 	text-decoration: none;
 }
 
-/* Mobiles Header */
+.banner{
+    width:100%;
+    max-width:1366px;
+    min-width:220px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center ;
+    align-items: center ;
+    align-content: space-around;
+}
 
+#banner1{
+    flex: 1 auto;
+    background-color: #82c3a6;
+}
+
+.center {
+    text-align: center;
+    padding-top: 25px
+}
+
+
+
+
+
+
+
+
+
+/* Mobiles Header */
 @media screen and (max-width: 600px) {
 
     header h1{
@@ -100,6 +129,17 @@ header ul li{
         display: block;
         order:0;
     }
+    #banner1{
+        flex: 1 100%;
+        order:1;
+    }
+    #banner2{
+        flex: 1 100%;
+        order:2;
+    }
 
+    .galeria{
+      width: 100%
+    }
 
 
