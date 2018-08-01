@@ -150,8 +150,8 @@ header ul li{
     justify-content: center ;
     align-items: center ;
     align-content: space-around;
+    font-size: .9em;
 }
-
 
 #box1 {
     float: left;
@@ -176,22 +176,21 @@ header ul li{
     float: left;
     width: 250px;
     height: 150px;
-    padding-top: 50px;
-
 }
 
 
-.iconored{
-     width: 30px;
+.icono {
+     width: 40px;
+     display: inline-block;
 }
+
 .img_gris{
   filter: grayscale(100%);
 }
 
 @media screen and (max-width: 960px){
 
-	#wrapper
-	{
+	#wrapper {
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -199,8 +198,7 @@ header ul li{
 
 @media screen and (max-width: 640px){
 
-	#wrapper
-	{
+	#wrapper {
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -208,8 +206,7 @@ header ul li{
 
 @media screen and (max-width: 480px){
 
-#wrapper
-	{
+#wrapper {
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -226,8 +223,13 @@ header ul li{
 	width: 100%;
 	}
 
-	header
-	{
+	#box4{
+		padding-top: 100px;
+	}
+    
+
+
+	header {
 	width:100%;
 	}
 }
@@ -269,4 +271,8 @@ header ul li{
     .galeria{
       width: 100%
     }
+    #box4{
+		padding-top: 100px;
+	}
+    
 
