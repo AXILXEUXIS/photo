@@ -36,7 +36,6 @@ article {
 	height: 100%;
 	padding: 2%;
 	text-align: center;
-
 }
 
 header ul {
@@ -90,13 +89,13 @@ header ul li{
 #columna1 {
 	max-width: 100%;
 	background-color: #82c3a6;
+	margin: 0 auto;
 }
 
 #columna2 {
 	width: 50%;
 	background-color: #d5c75f;
 }
-
 
 #columna3 {
 	background-color: #d5c75f;
@@ -122,23 +121,78 @@ header ul li{
 .banner3 {
 	width: 100%;
 	border: solid #000 1px;
-	transition: all .4s;
+  	transition: all .6s;}
+
+.banner3:hover {
+	transform: translate(20px);
+  	border: 2px solid black;
+  	box-shadow: 6px 0px 0px #82c3a6;
+}
+
+.link1 {
+	text-transform: uppercase;
+}
+
+.link1:hover {
+	color: red;
 }
 
 
-.back1 {
-	background-color: blue;
+.footer {
+	width:100%;
+    max-width:1366px;
+    min-width:220px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #c6d5c5;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center ;
+    align-items: center ;
+    align-content: space-around;
 }
 
 
+#box1 {
+    float: left;
+    width: 250px;
+    height: 150px;
+
+}
+
+#box2 {
+    float: left;
+    width: 250px;
+    height: 150px;
+}
+
+#box3 {
+    float: left;
+    width: 250px;
+    height: 150px;
+}
+
+#box4 {
+    float: left;
+    width: 250px;
+    height: 150px;
+    padding-top: 50px;
+
+}
 
 
+.iconored{
+     width: 30px;
+}
+.img_gris{
+  filter: grayscale(100%);
+}
 
 @media screen and (max-width: 960px){
 
 	#wrapper
 	{
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
 }
@@ -178,4 +232,41 @@ header ul li{
 	}
 }
 
+
+/* Mobiles Header */
+@media screen and (max-width: 600px) {
+
+    header h1{
+        font-size: 1.1em;
+        width: 100%
+    }
+    header nav{
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    header ul{
+        flex-flow: row wrap;
+    }
+
+    li a{
+        font-size: 14px;
+        margin-right: 22%;
+    }
+    header{
+        display: block;
+        order:0;
+    }
+    #banner1{
+        flex: 1 100%;
+        order:1;
+    }
+    #banner2{
+        flex: 1 100%;
+        order:2;
+    }
+
+    .galeria{
+      width: 100%
+    }
 
